@@ -1,5 +1,4 @@
-﻿using Duy.FootballData.Models;
-using System;
+﻿using System;
 using System.Net.Http;
 
 namespace Duy.FootballData.Client

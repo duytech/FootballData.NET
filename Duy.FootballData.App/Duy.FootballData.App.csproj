@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Duy.FootballData.Client\Duy.FootballData.Client.csproj" />
+    <ProjectReference Include="..\Duy.FootballData\Duy.FootballData.csproj" />
   </ItemGroup>
 
 </Project>
