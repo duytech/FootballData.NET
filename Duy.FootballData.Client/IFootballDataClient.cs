@@ -14,10 +14,14 @@ namespace Duy.FootballData.Client
 
         Task<Team> GetTeamById(int teamId);
 
-        Task<Fixtures> GetFixtures(int competitionId);
+        Task<Fixtures> GetFixtures();
 
         Task<Fixture> GetFixtureById(int fixtureId);
 
         Task<Players> GetPlayers(int teamId);
+
+        Task<LeagueTable> GetLeagueTable(int competitionId);
+
+        Task<LeagueTable> GetLeagueTable(int competitionId, int matchDay);
     }
 }

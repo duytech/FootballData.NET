@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>Duy Tech</Company>
+    <Authors>Duy IT</Authors>
+    <PackageTags>Football Data</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Duy.FootballData.Common\Duy.FootballData.Common.csproj" />
     <ProjectReference Include="..\Duy.FootballData.Models\Duy.FootballData.Models.csproj" />
   </ItemGroup>
 
