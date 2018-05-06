@@ -5,6 +5,12 @@
     <Company>Duy Tech</Company>
     <Authors>Duy IT</Authors>
     <PackageTags>Football Data</PackageTags>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+    <PackageProjectUrl>https://github.com/duytech/FootballData.NET</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/duytech/FootballData.NET/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright © 2018 Duy IT</Copyright>
+    <Description>Football Data Client</Description>
+    <Product>FootballData.NET</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,8 +18,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Duy.FootballData.Common\Duy.FootballData.Common.csproj" />
-    <ProjectReference Include="..\Duy.FootballData.Models\Duy.FootballData.Models.csproj" />
+    <ProjectReference Include="..\Duy.FootballData.Common\Duy.FootballData.Common.csproj" PrivateAssets="all" />
+    <ProjectReference Include="..\Duy.FootballData.Models\Duy.FootballData.Models.csproj" PrivateAssets="all" />
   </ItemGroup>
+
+  <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>
 
 </Project>
