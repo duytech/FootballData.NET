@@ -14,11 +14,11 @@ namespace Duy.FootballData.App
             {
                 var option = new FootballDataOption
                 {
-                    ApiKey = "b7bdb57c1474480dbd425df8aed1a0dd",
+                    ApiKey = string.Empty,
                     ResponseControl = ResponseControl.full,
                     BaseUrl = "http://api.football-data.org/v1/"
                 };
-                var client = new FootballDataClient(option);
+                IFootballDataClient client = new FootballDataClient(option);
 
                 var competition = await client.GetCompetitions(2017);
                 Console.WriteLine(JsonConvert.SerializeObject(competition, Formatting.Indented));
