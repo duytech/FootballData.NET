@@ -12,4 +12,22 @@ namespace Duy.FootballData.Models
         minified,
         compressed
     }
+
+    public enum Venue
+    {
+        home,
+        away
+    }
+
+    public enum LeagueCode
+    {
+        /// <summary>
+        /// 1. Bundesliga
+        /// </summary>
+        BL1,
+        /// <summary>
+        /// 2. Bundesliga
+        /// </summary>
+        BL2
+    }
 }

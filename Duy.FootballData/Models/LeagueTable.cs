@@ -8,6 +8,6 @@ namespace Duy.FootballData.Models
     {
         public string leagueCaption { get; set; }
         public int matchday { get; set; }
-        public List<StandingTeam> standing { get; set; }
+        public IList<StandingTeam> standing { get; set; }
     }
 }

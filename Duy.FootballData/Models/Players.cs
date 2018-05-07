@@ -7,6 +7,6 @@ namespace Duy.FootballData.Models
     public class Players
     {
         public int count { get; set; }
-        public List<Player> players { get; set; }
+        public IList<Player> players { get; set; }
     }
 }

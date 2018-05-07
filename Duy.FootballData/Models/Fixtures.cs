@@ -9,6 +9,6 @@ namespace Duy.FootballData.Models
         public DateTime? timeFrameStart { get; set; }
         public DateTime? timeFrameEnd { get; set; }
         public int count { get; set; }
-        public List<Fixture> fixtures { get; set; }
+        public IList<Fixture> fixtures { get; set; }
     }
 }
