@@ -29,10 +29,10 @@ namespace Duy.FootballData.App
                 var leagueTable = await client.GetLeagueTable(445, 1);
                 Console.WriteLine(JsonConvert.SerializeObject(leagueTable, Formatting.Indented));
 
-                var fixtureTeam = await client.GetFixturesForTeam(66, 2017, "n10", Venue.Home);
+                var fixtureTeam = await client.GetFixturesForTeam(66, 2017, new TimeFrame { TimeDirection = TimeDirection.Next, DayRange = 10 }, Venue.Home);
                 Console.WriteLine(JsonConvert.SerializeObject(fixtureTeam, Formatting.Indented));
 
-                var fixtureCompetition = await client.GetFixtures("n99", LeagueCode.PL, LeagueCode.CL, LeagueCode.SA);
+                var fixtureCompetition = await client.GetFixtures(new TimeFrame { TimeDirection = TimeDirection.Next, DayRange = 99 }, LeagueCode.PL, LeagueCode.CL, LeagueCode.SA);
                 Console.WriteLine(JsonConvert.SerializeObject(fixtureCompetition, Formatting.Indented));
 
                 var liverpoolPlayers = await client.GetPlayers(64);

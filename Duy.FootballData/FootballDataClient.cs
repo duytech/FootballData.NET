@@ -38,18 +38,22 @@ namespace Duy.FootballData.Client
         public async Task<FixtureHead2Head> GetFixture(int fixtureId, int? head2head)
             => await GetAsync<FixtureHead2Head>(_builder.BuildFixture(fixtureId, head2head));
 
-        public async Task<Fixtures> GetFixtures(string timeFrame, params LeagueCode[] leagueCodes)
+        public async Task<Fixtures> GetFixtures(TimeFrame timeFrame, params LeagueCode[] leagueCodes)
         {
-            var builder = new StringBuilder();
-            for (int index = 0; index < leagueCodes.Length; index++)
+            var leagueCode = string.Empty;
+            if (leagueCodes != null && leagueCodes.Length > 0)
             {
-                builder.Append(leagueCodes[index].ToString());
-                if (index < leagueCodes.Length - 1)
-                    builder.Append(",");
+                var builder = new StringBuilder();
+                for (int index = 0; index < leagueCodes.Length; index++)
+                {
+                    builder.Append(leagueCodes[index].ToString());
+                    if (index < leagueCodes.Length - 1)
+                        builder.Append(",");
+                }
+                leagueCode = builder.ToString();
             }
-            var leagueCode = builder.ToString();
 
-            return await GetAsync<Fixtures>(_builder.BuildFixtures(timeFrame, leagueCode));
+            return await GetAsync<Fixtures>(_builder.BuildFixtures(timeFrame.ToString(), leagueCode));
         }
 
         public async Task<LeagueTable> GetLeagueTable(int competitionId, int? matchDay)
@@ -64,14 +68,14 @@ namespace Duy.FootballData.Client
         public async Task<Teams> GetTeams(int competitionId)
             => await GetAsync<Teams>(_builder.BuildTeams(competitionId));
 
-        public async Task<Fixtures> GetFixturesForTeam(int teamId, int? season, string timeFrame, Venue? venue)
-            => await GetAsync<Fixtures>(_builder.BuildFixturesForTeam(teamId, season, timeFrame, venue));
+        public async Task<Fixtures> GetFixturesForTeam(int teamId, int? season, TimeFrame timeFrame, Venue? venue)
+            => await GetAsync<Fixtures>(_builder.BuildFixturesForTeam(teamId, season, timeFrame.ToString(), venue));
 
         public async Task<Fixtures> GetFixturesForCompetition(int competitionId, int? matchDay)
             => await GetAsync<Fixtures>(_builder.BuildFixturesForCompetition(competitionId, matchDay));
 
-        public async Task<Fixtures> GetFixturesForCompetition(int competitionId, string timeFrame)
-            => await GetAsync<Fixtures>(_builder.BuildFixturesForCompetition(competitionId, timeFrame));
+        public async Task<Fixtures> GetFixturesForCompetition(int competitionId, TimeFrame timeFrame)
+            => await GetAsync<Fixtures>(_builder.BuildFixturesForCompetition(competitionId, timeFrame.ToString()));
 
         private async Task<T> GetAsync<T>(string relativeUrl)
         {

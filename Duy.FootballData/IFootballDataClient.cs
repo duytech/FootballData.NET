@@ -34,7 +34,7 @@ namespace Duy.FootballData.Client
         /// <param name="timeFrame"></param>
         /// <param name="leagueCode"></param>
         /// <returns></returns>
-        Task<Fixtures> GetFixtures(string timeFrame, params LeagueCode[] leagueCode);
+        Task<Fixtures> GetFixtures(TimeFrame timeFrame, params LeagueCode[] leagueCode);
 
         /// <summary>
         /// Get one fixture.
@@ -52,7 +52,7 @@ namespace Duy.FootballData.Client
         /// <param name="timeFrame"></param>
         /// <param name="venue"></param>
         /// <returns></returns>
-        Task<Fixtures> GetFixturesForTeam(int teamId, int? season, string timeFrame, Venue? venue);
+        Task<Fixtures> GetFixturesForTeam(int teamId, int? season, TimeFrame timeFrame, Venue? venue);
 
         /// <summary>
         /// Get all fixtures for a certain competition with matchday filter.
@@ -68,7 +68,7 @@ namespace Duy.FootballData.Client
         /// <param name="competitionId"></param>
         /// <param name="timeFrame"></param>
         /// <returns></returns>
-        Task<Fixtures> GetFixturesForCompetition(int competitionId, string timeFrame);
+        Task<Fixtures> GetFixturesForCompetition(int competitionId, TimeFrame timeFrame);
 
         /// <summary>
         /// Get all players for a certain team.
