@@ -1,4 +1,5 @@
 ﻿using Duy.FootballData.Client;
+using Duy.FootballData.Common;
 using Duy.FootballData.Models;
 using Newtonsoft.Json;
 using System;
@@ -15,8 +16,7 @@ namespace Duy.FootballData.App
                 var option = new FootballDataOption
                 {
                     ApiKey = string.Empty,
-                    ResponseControl = ResponseControl.full,
-                    BaseUrl = "http://api.football-data.org/v1/"
+                    ResponseControl = ResponseControl.Full
                 };
                 IFootballDataClient client = new FootballDataClient(option);
 
@@ -29,8 +29,11 @@ namespace Duy.FootballData.App
                 var leagueTable = await client.GetLeagueTable(445, 1);
                 Console.WriteLine(JsonConvert.SerializeObject(leagueTable, Formatting.Indented));
 
-                var fixtureTeam = await client.GetFixturesForTeam(66, 2017, "n10", Venue.home);
+                var fixtureTeam = await client.GetFixturesForTeam(66, 2017, "n10", Venue.Home);
                 Console.WriteLine(JsonConvert.SerializeObject(fixtureTeam, Formatting.Indented));
+
+                var fixtureCompetition = await client.GetFixtures("n99", LeagueCode.PL, LeagueCode.CL, LeagueCode.SA);
+                Console.WriteLine(JsonConvert.SerializeObject(fixtureCompetition, Formatting.Indented));
 
                 var liverpoolPlayers = await client.GetPlayers(64);
                 Console.WriteLine(JsonConvert.SerializeObject(liverpoolPlayers, Formatting.Indented));

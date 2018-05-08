@@ -1,0 +1,255 @@
+﻿<tbody>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">League-Code</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Country</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">League</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">BL1</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Germany</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">1. Bundesliga</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">BL2</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Germany</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">2. Bundesliga</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">BL3</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Germany</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">3. Bundesliga</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">DFB</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Germany</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Dfb-Cup</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">PL</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">England</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Premiere League</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">EL1</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">England</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">League One</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">ELC</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">England</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Championship</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">FAC</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">England</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">FA-Cup</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">SA</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Italy</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Serie A</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">SB</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Italy</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Serie B</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">PD</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Spain</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Primera Division</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">SD</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Spain</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Segunda Division</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">CDR</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Spain</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Copa del Rey</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">FL1</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">France</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Ligue 1</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">FL2</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">France</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Ligue 2</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">DED</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Netherlands</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Eredivisie</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">PPL</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Portugal</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Primeira Liga</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">GSL</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Greece</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Super League</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">CL</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Europe</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Champions-League</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">EL</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Europe</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">UEFA-Cup</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">EC</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">Europe</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">European-Cup of Nations</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">WC</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">World</p>
+    </td>
+    <td class="tableblock halign-left valign-top">
+      <p class="tableblock">World-Cup</p>
+    </td>
+  </tr>
+</tbody>

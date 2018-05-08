@@ -15,8 +15,8 @@ namespace Duy.FootballData.Common
             if(!string.IsNullOrEmpty(option.ApiKey))
                 this.DefaultRequestHeaders.Add("X-Auth-Token", option.ApiKey);
 
-            this.DefaultRequestHeaders.Add("X-Response-Control", option.ResponseControl.ToString());
-            this.BaseAddress = new Uri(option.BaseUrl);
+            this.DefaultRequestHeaders.Add("X-Response-Control", option.ResponseControl.ToString().ToLower());
+            BaseAddress = new Uri(Constants.BaseURL);
         }
     }
 }

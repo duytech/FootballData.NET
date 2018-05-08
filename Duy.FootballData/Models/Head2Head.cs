@@ -15,6 +15,6 @@ namespace Duy.FootballData.Models
         public Fixture lastWinHomeTeam { get; set; }
         public Fixture lastAwayWinAwayTeam { get; set; }
         public Fixture lastWinAwayTeam { get; set; }
-        public List<Fixture> fixtures { get; set; }
+        public IList<Fixture> fixtures { get; set; }
     }
 }

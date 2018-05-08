@@ -1,4 +1,6 @@
-﻿namespace Duy.FootballData.Models
+﻿using Duy.FootballData.Common;
+
+namespace Duy.FootballData.Models
 {
     public class FootballDataOption
     {

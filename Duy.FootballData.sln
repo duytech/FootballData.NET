@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Duy.FootballData.App", "Duy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Duy.FootballData", "Duy.FootballData\Duy.FootballData.csproj", "{A9BEB2F0-85F5-4E88-A58E-70CE289603A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duy.FootballData.Tools", "Duy.FootballData.Tools\Duy.FootballData.Tools.csproj", "{ECBCF2BB-A4DD-4C23-8139-942BF630CD8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A9BEB2F0-85F5-4E88-A58E-70CE289603A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9BEB2F0-85F5-4E88-A58E-70CE289603A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9BEB2F0-85F5-4E88-A58E-70CE289603A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECBCF2BB-A4DD-4C23-8139-942BF630CD8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECBCF2BB-A4DD-4C23-8139-942BF630CD8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECBCF2BB-A4DD-4C23-8139-942BF630CD8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECBCF2BB-A4DD-4C23-8139-942BF630CD8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

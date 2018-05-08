@@ -1,6 +1,4 @@
-﻿using Duy.FootballData.Models;
-using System;
-using System.Text;
+﻿using System.Text;
 
 namespace Duy.FootballData.Common
 {
@@ -28,10 +26,10 @@ namespace Duy.FootballData.Common
             return builder.ToString();
         }
 
-        public string BuildFixtures(int? timeFrame, string leagueCode)
+        public string BuildFixtures(string timeFrame, string leagueCode)
         {
             var builder = new StringBuilder("fixtures/?");
-            if (timeFrame.HasValue)
+            if (!string.IsNullOrEmpty(timeFrame))
             {
                 builder.Append($"timeFrame={timeFrame}");
             }
@@ -81,7 +79,7 @@ namespace Duy.FootballData.Common
 
             if (venue.HasValue)
             {
-                builder.Append($"&venue={venue}");
+                builder.Append($"&venue={venue.ToString().ToLower()}");
             }
 
             return builder.ToString();
