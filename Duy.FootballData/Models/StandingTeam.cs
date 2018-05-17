@@ -2,7 +2,7 @@
 {
     public class StandingTeam
     {
-        public int rank { get; set; }
+        public int position { get; set; }
         public string teamName { get; set; }
         public int teamId { get; set; }
         public int playedGames { get; set; }
