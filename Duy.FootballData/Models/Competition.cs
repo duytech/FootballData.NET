@@ -8,6 +8,7 @@ namespace Duy.FootballData.Models
 {
     public class Competition
     {
+        public CompetitionLinks _links { get; set; }
         public int id { get; set; }
         public string caption { get; set; }
         public string league { get; set; }

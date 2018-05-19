@@ -4,7 +4,6 @@ namespace Duy.FootballData.Models
 {
     public class Player
     {
-        public int id { get; set; }
         public string name { get; set; }
         public string position { get; set; }
         public int? jerseyNumber { get; set; }

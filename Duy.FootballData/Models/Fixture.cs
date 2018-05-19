@@ -4,7 +4,7 @@ namespace Duy.FootballData.Models
 {
     public class Fixture
     {
-        public Links _links { get; set; }
+        public FixtureLinks _links { get; set; }
 
         public int id
         {
@@ -32,14 +32,7 @@ namespace Duy.FootballData.Models
         public int matchday { get; set; }
         public string homeTeamName { get; set; }
         public string awayTeamName { get; set; }
-        public Result result { get; set; }
-    }
-
-    public class Links
-    {
-        public Link self { get; set; }
-        public Link competition { get; set; }
-        public Link hometeam { get; set; }
-        public Link awayteam { get; set; }
+        public FixtureResult result { get; set; }
+        public Odds odds { get; set; }
     }
 }

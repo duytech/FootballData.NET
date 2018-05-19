@@ -1,6 +1,6 @@
 ﻿namespace Duy.FootballData.Models
 {
-    public class Result
+    public class FixtureResult
     {
         public int? goalsHomeTeam { get; set; }
         public int? goalsAwayTeam { get; set; }
